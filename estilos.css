@@ -170,11 +170,12 @@ h1 {
 .gridcaracteristicas > div {
 
     text-align: center;
-    background-color: #737373;
+    background-color: #4A4A4A;
+    color: white;
        
 }
 
-.gridcaracteristicas > div> h3 {
+.gridcaracteristicas > div > h3 {
 
     margin-top: 1rem;
     
