@@ -1,0 +1,268 @@
+html {
+
+    width: 70vw;
+    margin-left: 15%;
+    margin-right: 15%;  
+    max-width: 1200px;
+    font-size: 15px; 
+    background-color: burlywood;
+
+}
+
+body {
+
+    width: 100%;
+    margin: 0;
+    max-width: 1200px;
+    font-family: 'Roboto', sans-serif;
+    background-color: blanchedalmond;
+
+}
+
+.header {
+
+    width: 70vw;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+    background-color: black;
+    color: white;
+    
+
+}
+
+.header > p {
+
+    padding-left: 1rem;
+    font-weight: bold;
+
+}
+
+.webnav {
+    
+    justify-self: right;
+    padding: 0;
+
+}
+
+
+.webmenu {
+
+    display: inline;
+    padding: 2rem;
+    
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.imgbanner {
+
+    grid-column: 1 / span 2;
+    width: 70vw;
+    max-width: 1200px;
+    height: auto;
+    
+}
+
+h1 {
+
+    margin: 0;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    text-align: center;
+
+}
+
+#inicio {
+
+    background-color: white;
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+
+}
+
+#interior {
+
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+
+}
+
+.gridinterior {
+
+    display: grid;
+    height: auto;
+    margin: 3rem;
+    margin-top: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    grid-template-columns: repeat(1fr 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.gridinterior > p {
+
+    margin: 0;
+
+}
+
+.gridinterior > h2 {
+
+    grid-column: 1 / span 2;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #bea316;
+    font-size: 18px;
+
+}
+
+#caracteristicas {
+
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
+
+.gridcaracteristicas {
+
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-auto-rows: auto 1fr;
+    gap: 1rem;
+    justify-content: center;
+
+    
+}
+
+.gridcaracteristicas > h1 {
+
+    grid-column: 1 / span 4;
+    
+}
+
+.gridcaracteristicas > div {
+
+    text-align: center;
+    background-color: #4A4A4A;
+    color: white;
+       
+}
+
+.gridcaracteristicas > div > h3 {
+
+    margin-top: 1rem;
+    
+}
+
+.gridcaracteristicas > div > ul {
+
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    line-height: 2rem;
+       
+}
+
+#galeria {
+
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+
+}
+
+.gridgaleria {
+
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-auto-rows: auto 1fr;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+
+}
+
+.gridgaleria > h1 {
+
+    grid-column: 1 / span 4;
+
+}
+
+.gridgaleria > img {
+
+    max-width: 10rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+.freepik {
+
+    font-size: 18px;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.webfooter {
+
+background-color: #6F7B7B;
+height: 4rem;
+text-align: center;
+color: #000000;
+
+}
+
+.webfooter > p {
+
+    margin: 0;
+    padding: 1rem;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .gridinterior > img {
+        grid-column: 1 / span 2;
+    }
+    .gridinterior > p {
+        grid-column: 1 / span 2;
+    }
+    .gridcaracteristicas > div {  
+        grid-column: 2 / span 2;
+    }
+    .gridgaleria > img {
+        grid-column: 2 / span 2;
+        max-width: 20rem;
+    }
+}
